@@ -58,15 +58,17 @@ Value(data, 82, "Ozone")
 
 #Task2
 
-missingvalues<- subset(data, is.na('Ozone'))
-nrow(missing)
+data[,]
+
+missingvalues<- subset(data, is.na(Ozone))
+nrow(missingvalues)
 
 MissingFunction<- function(data, col){
   missingvalues<- subset(data, is.na(col))
-  nrow(missing)
+  nrow(missingvalues)
 }
 
-MissingFunction(data,'Ozone')
+MissingFunction(data,Temp)
 
 
 #Task3
